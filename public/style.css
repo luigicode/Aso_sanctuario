@@ -252,9 +252,10 @@ p {
 /* about section */
 
 .about-section {
+  font-size: 40px !important;
   color: var(--black);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+  margin: 4rem;
 }
 
 /* Our dogs */
@@ -268,8 +269,8 @@ p {
   border-radius: 5px;
   margin: 15px;
   border: 6px solid var(--secondary-color);
-  max-width: 35vw;
-  max-height: 35vh;
+  max-width: 14rem;
+  max-height: 14rem;
 }
 
 .dog-list h3 {
@@ -279,11 +280,48 @@ p {
 }
 /* stories */
 
+.img-grid-container {
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: repeat(2, auto);
+  max-width: 80rem;
+  margin: auto;
+}
+
+.img-grid-row {
+  max-width: 999px;
+  align-content: center;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(3, auto);
+}
+
+.img-grid {
+  padding: 0rem;
+  margin: 0rem;
+  align-content: center;
+  display: grid;
+  gap: 0rem;
+  grid-template-rows: repeat(1, auto);
+}
+
+.img-grid img {
+  overflow: hidden;
+  padding: 1px;
+  height: 12rem;
+  width: 16rem;
+
+  max-height: 16rem;
+  max-width: 12rem;
+}
+.img-grid li {
+  max-width: 7.5rem;
+}
 .stories-link {
   margin: 15px;
 }
 
-.stories-grid {
+/* .stories-grid {
   display: grid;
   grid-template-columns: repeat(2, 3fr);
 }
@@ -299,7 +337,7 @@ p {
 
 #stories .section-1 {
   padding: 25px;
-}
+} */
 /* .stories-img {
 
 } */

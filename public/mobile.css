@@ -5,9 +5,12 @@
 }
 
 /* ᵇᶦᵍ ᶜʰᵘⁿᵍᵘˢ */
-/* @media (max-width: 2000px) {
-
-} */
+@media (max-width: 2000px) {
+  .img-grid img {
+    max-height: 18rem;
+    max-width: 12rem;
+  }
+}
 
 /*  medium */
 @media screen and (max-width: 1310px) {
@@ -30,8 +33,15 @@
   }
 
   /* stories */
-  .stories-grid {
-    grid-template-columns: repeat(1, 1fr) !important;
+  .img-grid-container {
+    grid-template-columns: repeat(1, auto) !important;
+    margin: 5rem !important;
+    max-width: 31rem !important;
+  }
+
+  .img-grid img {
+    max-height: 18rem;
+    max-width: 12rem;
   }
 }
 /* small */
@@ -63,8 +73,14 @@
     grid-template-columns: repeat(1, auto) !important;
     width: 100vw;
   }
-  .half {
-    width: 90vw !important;
+
+  /* media */
+  .img-grid-container {
+    max-width: 3rem !important;
+  }
+  .img-grid img {
+    max-height: 8rem !important;
+    max-width: 7rem !important;
   }
 }
 
