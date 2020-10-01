@@ -93,8 +93,9 @@ p {
 /* nav */
 
 #main-nav {
-  position: fixed;
-  overflow: hidden;
+  position: fixed !important;
+  overflow: initial;
+  filter: blur(0.001px);
   font-size: 25px;
   display: grid;
   width: 100%;
@@ -103,6 +104,12 @@ p {
   background-color: var(--primary-color);
   padding: 1rem;
   box-shadow: 0rem -1rem 3rem 0rem;
+}
+
+#main-nav nav {
+  left: 40vw;
+  text-align: center;
+  position: absolute;
 }
 
 .nav-grid {
@@ -130,7 +137,42 @@ p {
 /* header */
 .main {
   color: white;
-  background-color: var(--secondary-color);
+
+  text-shadow: 2px 1px 7px #000000;
+  height: 100%;
+}
+
+.blur-image {
+  /* The image used */
+  background-image: url(/public/images/dorian.jpg);
+
+  /* Add the blur effect */
+  filter: blur(2px);
+  overflow: hidden;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  text-align: center;
+
+  position: absolute;
+
+  display: block;
+  background-color: rgba(0, 0, 0, 0.815);
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
 }
 
 .main div {
@@ -138,7 +180,7 @@ p {
 }
 
 .main-title {
-  padding-top: 4rem;
+  padding-bottom: 10px;
   font-size: 3rem;
   text-shadow: 2px 1px 7px #000000;
 }
@@ -278,6 +320,13 @@ p {
   color: var(--secondary-color);
   font-weight: bold;
 }
+
+.ourdog-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3.8rem;
+  padding: 40px;
+}
+
 /* stories */
 
 .img-grid-container {
@@ -319,6 +368,11 @@ p {
 }
 .stories-link {
   margin: 15px;
+}
+
+#media h1 {
+  padding: 35px;
+  font-size: 3.5rem;
 }
 
 /* .stories-grid {
