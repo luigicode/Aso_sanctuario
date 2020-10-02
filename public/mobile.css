@@ -7,8 +7,12 @@
 /* ᵇᶦᵍ ᶜʰᵘⁿᵍᵘˢ */
 @media (max-width: 2000px) {
   .img-grid img {
-    max-height: 18rem;
-    max-width: 12rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px !important;
+
+    max-height: 10rem !important;
+    max-width: 10rem !important;
   }
 }
 
@@ -72,14 +76,23 @@
   .about-section {
     grid-template-columns: repeat(1, auto) !important;
     width: 100vw;
+
+    padding: 0px !important;
+
+    margin: 8rem 0rem 5rem 0rem !important;
   }
 
   /* media */
+
   .img-grid-container {
-    max-width: 3rem !important;
+    max-width: 50vw !important;
+
+    margin: 20px;
   }
   .img-grid img {
-    max-height: 8rem !important;
+    margin: 5px !important;
+
+    max-height: 7rem !important;
     max-width: 7rem !important;
   }
 }
