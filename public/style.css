@@ -378,6 +378,10 @@ p {
 .img-grid-container a {
   max-width: 70vw;
 }
+#media {
+  max-width: 100vw;
+}
+
 #media div {
   max-width: 100vw;
 }
