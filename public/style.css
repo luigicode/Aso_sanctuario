@@ -179,7 +179,7 @@ p {
   filter: blur(0.001px);
   font-size: 25px;
   display: grid;
-  width: 90%;
+  width: auto;
   height: 10vh;
   margin-bottom: 30rem;
   align-items: center;
