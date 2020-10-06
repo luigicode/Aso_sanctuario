@@ -119,8 +119,14 @@
 /* small tablet */
 @media screen and (max-width: 774px) {
   /* media */
-  .img-grid-container {
+  #media h1 {
+    font-size: 2rem !important;
+  }
+
+  .img-grid-container div {
     grid-template-columns: repeat(2, auto) !important;
+
+    margin: 0px 50px 2px 50px !important;
   }
 
   .img-grid img {
@@ -128,6 +134,24 @@
 
     max-height: 85px !important;
     max-width: 85px !important;
+  }
+}
+/* big phone */
+@media screen and (max-width: 600px) {
+  /* our dogs */
+  .dog-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  /* media */
+  .img-grid-container {
+    grid-template-columns: repeat(1, auto) !important;
+
+    margin: 0px 50px 2px 50px !important;
+  }
+
+  /* footer */
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 
