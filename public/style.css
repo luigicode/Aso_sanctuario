@@ -85,6 +85,7 @@ a:visited {
 }
 
 h1 {
+  padding: 15px;
   font-size: 23px;
 }
 
@@ -176,6 +177,7 @@ p {
 #main-nav {
   position: fixed !important;
   overflow: initial;
+  white-space: nowrap;
   filter: blur(0.001px);
   font-size: 25px;
   display: grid;
@@ -192,6 +194,10 @@ p {
   gap: 24px;
   display: inline-grid;
   grid-template-columns: repeat(5, auto);
+  text-align: center;
+}
+
+#main-nav nav {
   text-align: center;
 }
 
@@ -263,7 +269,7 @@ p {
 }
 
 .main-title {
-  padding-bottom: 10px;
+  padding: 60px 0px 10px 0px;
   font-size: 3rem;
   text-shadow: 2px 1px 7px #000000;
 }
