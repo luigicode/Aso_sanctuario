@@ -21,6 +21,10 @@
   box-sizing: border-box;
 }
 
+*:hover {
+  transition: 0.5s;
+}
+
 .container {
   padding: auto;
 }
@@ -171,6 +175,18 @@ p {
 
   grid-template-columns: repeat(2, 3fr);
 }
+
+.FB-button {
+  padding: 5px;
+  background-color: #3b5998;
+  color: white;
+}
+
+.INS-button {
+  padding: 5px;
+  background-color: #f2003c;
+  color: white;
+}
 /* end of button */
 /* nav */
 
@@ -194,12 +210,13 @@ p {
 
 .nav-grid {
   gap: 24px;
-  padding: 20px 6px 35px 8rem;
+  padding: 10px 6px 35px 8rem;
   display: inline-grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
 }
 
 #main-nav a {
+  text-align: center;
   font-size: 13px;
   color: white;
 }
@@ -223,11 +240,22 @@ p {
   padding-bottom: 0rem !important;
 }
 
-.main-home {
-  background-image: url(/public/images/dorian-blur.jpg);
+.main-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main-home {
+  background-image: url(/public/images/dorian-blur.jpg);
+}
+
+.main-about {
+  background-image: url(/public/images/gold\ ret\ -\ blur.jpg);
+}
+
+.main-breeder {
+  background-image: url(/public/images/dogbreeder\ -\ blur.jpg);
 }
 
 .blur-image {
@@ -405,7 +433,77 @@ p {
   font-size: 3.5rem;
 }
 
+.media-button {
+  padding: 20px;
+
+  gap: 50px;
+
+  grid-template-columns: repeat(2, auto);
+}
+
+.media-button span {
+  margin: 9.5rem;
+}
+
 /* end of body */
+
+/* breeder page */
+.breeder-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.breeder-el {
+  background-color: var(--light-third);
+
+  margin: 10px;
+
+  border-radius: 2%;
+  box-shadow: 5px 5px 10px var(--b);
+
+  padding: 15px;
+  width: auto;
+  height: auto;
+
+  max-width: 40vw;
+  max-height: auto;
+}
+
+.breeder-el img {
+  padding: -1px;
+
+  flex-basis: 40%;
+
+  max-width: 13rem;
+  max-height: 80rem;
+}
+
+.breeder-el a {
+  color: var(--black);
+}
+
+.breeder-el a:hover {
+  color: var(--primary-color);
+}
+
+.breeder-el-title {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.breeder-el-info {
+  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+}
+
+.breeder-el-info li:hover {
+  color: var(--primary-color);
+}
+
+.breeder-el-info2 {
+  grid-template-rows: repeat(2, auto);
+}
 /* root footer */
 
 footer {
@@ -424,7 +522,6 @@ footer a {
 
 footer a:hover {
   color: var(--black);
-  transition: 0.5s;
 }
 
 footer img {

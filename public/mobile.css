@@ -250,6 +250,10 @@
     max-width: 90px !important;
   }
 
+  .media-button span {
+    margin: 7.9rem !;
+  }
+
   /* footer  */
 
   .footer-container {
