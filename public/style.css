@@ -497,8 +497,8 @@ p {
   grid-template-columns: repeat(1, auto);
 }
 
-.breeder-el-info li:hover {
-  color: var(--primary-color);
+.breeder-el-info li {
+  white-space: nowrap;
 }
 
 .breeder-el-info2 {
