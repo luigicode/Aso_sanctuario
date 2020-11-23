@@ -25,6 +25,10 @@
   transition: 0.5s;
 }
 
+.unavailable {
+  cursor: not-allowed;
+}
+
 .container {
   padding: auto;
 }
