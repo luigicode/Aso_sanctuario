@@ -454,7 +454,7 @@ p {
 /* breeder page */
 .breeder-grid {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
 }
 
 .breeder-el {
