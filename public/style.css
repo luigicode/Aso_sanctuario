@@ -458,18 +458,18 @@ p {
 }
 
 .breeder-el {
+  color: black;
   background-color: var(--light-third);
-
-  margin: 10px;
+  margin: 25px;
 
   border-radius: 2%;
   box-shadow: 5px 5px 10px var(--b);
 
   padding: 15px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 80%;
 
-  max-width: 40vw;
+  max-width: 45vw;
   max-height: auto;
 }
 
@@ -487,7 +487,7 @@ p {
 }
 
 .breeder-el a:hover {
-  color: var(--primary-color);
+  color: var(--third-color);
 }
 
 .breeder-el-title {
