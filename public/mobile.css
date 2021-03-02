@@ -53,16 +53,26 @@
   }
 
   /* breeder */
-
-  .breeder-el img {
-    max-width: 12px;
-    max-height: 75px;
-  }
 }
 
 @media screen and (max-width: 1208px) {
   .img-grid-container {
     max-width: 69rem !important;
+  }
+
+  .breeder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto) !important;
+    text-align: center !important;
+  }
+
+  .breeder-el {
+    padding: 10px 50% 20px 20px !important;
+  }
+
+  .breeder-el img {
+    max-width: 10rem !important;
+    height: auto !important;
   }
 }
 
@@ -177,17 +187,24 @@
     margin: 5px;
   }
 
-  /* breeder */
+  /* breeeder  */
   .breeder-grid {
+    display: grid;
     grid-template-columns: repeat(1, auto) !important;
+    text-align: center !important;
   }
-
   .breeder-el {
+    padding: 63px !important;
+    margin: 10px 1px 2px 1px !important;
     max-width: 100% !important;
+    max-height: auto !important;
+    font-size: 15px !important;
   }
 
   .breeder-el img {
-    max-width: 10rem !important;
+    padding: 10px !important;
+    max-width: 100%;
+    max-height: 75%;
   }
 }
 /* big phone */
@@ -222,20 +239,14 @@
   }
 
   /* breeder */
-  .breeder-grid {
-    grid-template-columns: repeat(1, auto) !important;
-  }
 
   .breeder-el {
-    margin-bottom: 5px !important;
-    padding: 5px !important;
+    padding: 36px 20px 40px 20px !important;
     max-width: 100% !important;
-
-    grid-template-columns: repeat(1, auto) !important;
   }
 
   .breeder-el img {
-    max-width: 5rem !important;
+    max-width: 10rem !important;
   }
 }
 
