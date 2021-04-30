@@ -63,6 +63,7 @@
   .breeder-grid {
     display: grid;
     grid-template-columns: repeat(2, auto) !important;
+    grid-template-rows: repeat(1, auto);
     text-align: center !important;
   }
 

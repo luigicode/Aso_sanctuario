@@ -470,6 +470,8 @@ p {
 
   max-width: 45vw;
   max-height: auto;
+
+  overflow: unset;
 }
 
 .breeder-el img {
@@ -479,6 +481,7 @@ p {
 
   max-width: 13rem;
   max-height: 80rem;
+  min-height: 250px;
 }
 
 .breeder-el a {
