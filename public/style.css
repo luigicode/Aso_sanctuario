@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #7c677f;
-  --light-primary: #8076a3;
+  --purple: #7c677f;
+  --light-purple: #8076a3;
   --secondary-color: #9bc400;
   --dark-secondary: #7ea001;
   --black: #3b3a3a;
@@ -8,7 +8,7 @@
   --third-color: #f9c5bd;
   --light-third: #fccfc8;
   --pusha: #89a2ff;
-  --blue: #ebe976;
+  --yellow: #ebe976;
 }
 
 * {
@@ -44,7 +44,7 @@
 }
 
 .current-link {
-  color: var(--light-third) !important;
+  color: var(--dark-secondary) !important;
 }
 
 .text {
@@ -74,6 +74,10 @@ section {
 .padding-2 {
   padding: 2rem 0rem 1rem;
 }
+.padding-3 {
+  padding: 4rem 0rem 6rem;
+}
+
 
 ul li {
   list-style: none;
@@ -127,12 +131,12 @@ p {
 }
 
 .button-primary {
-  background-color: var(--primary-color);
+  background-color: var(--purple);
   color: #ffffff;
 }
 
 .button-primary:hover {
-  background-color: var(--light-primary);
+  background-color: var(--light-purple);
   color: var(--black);
 }
 
@@ -141,25 +145,29 @@ p {
   color: #ffffff;
 }
 
+.button-secondary:hover {
+  background-color: var(--dark-secondary);
+}
+
 .button-trans {
   color: white;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--purple);
   background-color: transparent;
 }
 
 .button-trans:hover {
-  background-color: var(--primary-color);
+  background-color: var(--purple);
 }
 
 .button-trans-black {
   color: var(--black);
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--purple);
   background-color: transparent;
 }
 
 .button-trans-black:hover {
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--purple);
 }
 
 .button-trans-green {
@@ -201,31 +209,44 @@ p {
   filter: blur(0.001px);
   display: grid;
   width: 100%;
-  height: 10vh;
-  max-height: 10vh;
+  height: 15vh;
+  max-height: 20vh;
 
-  background-color: var(--primary-color);
+  background-color: var(--black);    
+  box-shadow: 1px #747272;
+  box-shadow: 0px 1px 10px;
 }
 
 #main-nav ul li {
   font-size: 35px;
 }
 
-.nav-grid {
-  gap: 24px;
-  padding: 10px 6px 35px 8rem;
-  display: inline-grid;
-  grid-template-columns: repeat(6, auto);
+.nav-container {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.nav-logo  {
+  font-weight: bold;
+  font-size: 40px;
+  color: white
 }
 
-#main-nav a {
+.nav-grid {
   text-align: center;
-  font-size: 13px;
+  padding: 10px 6px 35px 8rem;
+  display: inline-grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.nav-a {
+  text-align: center;
   color: white;
 }
 
 #main-nav a:hover {
-  color: var(--light-third);
+  color: var(--dark-secondary);
   transition: 0.5s;
 }
 
@@ -235,7 +256,7 @@ p {
 
 /* header */
 .main {
-  background-color: var(--primary-color);
+  background-color: var(--purple);
   color: white;
 
   text-shadow: 2px 1px 7px #000000;
@@ -311,7 +332,7 @@ p {
 }
 
 .section-2 {
-  background-color: var(--primary-color);
+  background-color: var(--purple);
   color: #ffffff;
 }
 .section-3 {
@@ -333,28 +354,85 @@ p {
   background-color: var(--b);
 }
 
-.section-blue {
+.section-green {
   color: white;
-  background-color: var(--blue);
+  background-color: var(--dark-secondary);
 }
 
 /* about section */
 
 .about-section {
-  font-size: 40px !important;
+  font-size: 40px;
   color: var(--black);
   padding: 3rem;
   margin: 4rem;
 }
 
-/* Our dogs */
-.dog-list {
-  gap: 25px;
+
+.about-h1 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+/* Our NFTs */
+.nft-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.nft-grid {
+  margin: 5px 3rem;
   display: grid;
   grid-template-columns: repeat(4, auto);
 }
 
-.dog-list img {
+.nft-grid li {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nft-list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.nft-list img {
+  border-radius: 5px;
+  margin: 1px;
+  border: 6px solid var(--secondary-color);
+  max-width: 150px;
+  max-height: 100%;
+}
+.nft-list-credit {
+  padding: 0px;
+}
+.nft-list h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nft-list a {
+  color: #3b5998;
+  font-weight: bold;
+}
+.nft-list a:hover {
+  color: #002096;
+}
+
+.ournft-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3.8rem;
+  padding: 40px;
+}
+
+/* Perks */
+
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.member-list img {
   border-radius: 5px;
   margin: 15px;
   border: 6px solid var(--secondary-color);
@@ -362,13 +440,13 @@ p {
   max-height: 14rem;
 }
 
-.dog-list h3 {
+.member-list h3 {
   font-size: 25px;
   color: var(--secondary-color);
   font-weight: bold;
 }
 
-.ourdog-title {
+.ourmember-title {
   font-family: "Courier New", Courier, monospace;
   font-size: 3.8rem;
   padding: 40px;
@@ -451,6 +529,13 @@ p {
 /* end of body */
 
 /* breeder page */
+/* .roadmap-section {
+  font-size: 40px;
+  color: var(--black);
+  padding: 3rem;
+  margin: 4rem;
+} */
+
 .breeder-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -488,7 +573,7 @@ p {
 }
 
 .breeder-el a:hover {
-  color: var(--primary-color);
+  color: var(--purple);
 }
 
 .breeder-grid ul {

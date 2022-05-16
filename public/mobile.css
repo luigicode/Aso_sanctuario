@@ -1,7 +1,7 @@
 /* body */
 
 /* ᵇᶦᵍ ᶜʰᵘⁿᵍᵘˢ */
-@media (max-width: 1900px) {
+@media only screen and (max-width: 1900px) {
   /* nav */
   .nav-link {
     font-size: 4rem !important;
@@ -19,7 +19,7 @@
 }
 
 /*  medium */
-@media screen and (max-width: 1306px) {
+@media only screen and (max-width: 1306px) {
   body {
     font-size: 40px;
   }
@@ -39,7 +39,7 @@
 
   /* Ourdogs */
 
-  .dog-list {
+  .member-list {
     grid-template-columns: repeat(2, auto) !important;
   }
 
@@ -55,7 +55,7 @@
   /* breeder */
 }
 
-@media screen and (max-width: 1208px) {
+@media only screen and (max-width: 1208px) {
   .img-grid-container {
     max-width: 69rem !important;
   }
@@ -72,14 +72,14 @@
   }
 }
 
-@media screen and (max-width: 1222px) {
+@media only screen and (max-width: 1222px) {
   .img-grid img {
     max-width: 165px !important;
     max-height: 165px !important;
   }
 }
 
-@media screen and (max-width: 1053px) {
+@media only screen and (max-width: 1053px) {
   .img-grid img {
     max-width: 145px !important;
     max-height: 145px !important;
@@ -87,9 +87,9 @@
 }
 
 /* small */
-@media screen and (max-width: 869px) {
+@media only screen and (max-width: 869px) {
   /* nav */
-  #main-nav a {
+  .nav-a {
     padding-bottom: 14px !important;
     font-size: 12px !important;
   }
@@ -126,6 +126,11 @@
     margin: 8rem 0rem 5rem 0rem !important;
   }
 
+  /* nft */
+
+  .nft-list {
+    grid-template-columns: repeat(1, auto) !important;
+  }
   /* media */
 
   .img-grid-container {
@@ -153,7 +158,7 @@
 }
 
 /* small tablet */
-@media screen and (max-width: 774px) {
+@media only screen and (max-width: 774px) {
   /* navbar */
   .nav-grid {
     padding: 15px 10px 0px 12px !important;
@@ -172,6 +177,11 @@
   }
 
   /* dog */
+  .nft-grid{
+    margin: 1px 1px;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
   .img-grid img {
     margin: 0px !important;
 
@@ -204,9 +214,12 @@
   }
 }
 /* big phone */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /* our dogs */
-  .dog-list {
+  .nft-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  } 
+  .member-list {
     grid-template-columns: repeat(1, 1fr) !important;
   }
 
@@ -247,14 +260,14 @@
 }
 
 /* mobile */
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   * {
     font-size: 60px;
   }
 
   /* navbar */
 
-  #main-nav a {
+  .nav-a {
     padding: 0pc !important;
     text-align: center !important;
     font-size: 9px !important;
@@ -276,7 +289,10 @@
   /* about */
 
   /* our dog */
-  .dog-list {
+  .nft-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  } 
+   .member-list {
     grid-template-columns: repeat(1, 1fr) !important;
   }
 
@@ -314,7 +330,7 @@
   }
 }
 
-@media screen and (max-height: 544px) {
+@media only screen and (max-height: 544px) {
   .nav-grid {
     padding: 0px 9px 5px 11px !important;
   }
