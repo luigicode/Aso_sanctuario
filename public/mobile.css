@@ -46,7 +46,7 @@
   /* stories */
   .img-grid-container {
     grid-template-columns: repeat(2, auto) !important;
-    margin: 0px 2.5rem 5px 2.5rem !important;
+    /* margin: 0px 2.5rem 5px 2.5rem !important; */
     gap: 4px !important;
 
     max-width: 31rem !important;
@@ -178,7 +178,7 @@
 
   /* dog */
   .nft-grid{
-    margin: 1px 1px;
+    margin: 1px 1px !important;
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
@@ -239,7 +239,9 @@
   }
 
   /* about */
-
+  .about-section p{
+    margin: 0rem 0rem !important;
+  }
   .text {
     margin: 0px !important;
   }
@@ -289,6 +291,11 @@
   /* about */
 
   /* our dog */
+
+  .ourmember-title {
+    font-size: 2rem !important;
+  }
+
   .nft-list {
     grid-template-columns: repeat(1, 1fr) !important;
   } 
@@ -307,7 +314,7 @@
   }
 
   .img-grid-container {
-    max-width: 50vw !important;
+    /* max-width: 50vw !important; */
 
     grid-template-columns: repeat(1, auto) !important;
     margin: 15px !important;
